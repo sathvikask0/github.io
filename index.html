@@ -157,7 +157,7 @@
 <body>
     <h1>WTC 2025 Simulator</h1>
     
-    <h2>Current Standings 25 Nov 2024</h2>
+    <h2>Current Standings 1st Dec 2024</h2>
     <table id="initialStandings">
         <!-- Table will be populated by JavaScript -->
     </table>
@@ -206,15 +206,15 @@
         }
 
         const initialTeams = [
-            new Team("IND", 110, 61.11),
-            new Team("AUS", 90, 57.69),
-            new Team("SL", 60, 55.56),
-            new Team("NZ", 72, 54.55),
-            new Team("SA", 52, 54.17),
-            new Team("ENG", 93, 40.79),
-            new Team("PAK", 40, 33.33),
-            new Team("BAN", 33, 27.50),
-            new Team("WI", 20, 18.52)
+            new Team("INDIA", 110, 61.11),         // 15 played, 9 won, 5 lost, 1 draw, 2 DED
+            new Team("SOUTH AFRICA", 64, 59.26),   // 9 played, 5 won, 3 lost, 1 draw, 0 DED
+            new Team("AUSTRALIA", 90, 57.69),      // 13 played, 8 won, 4 lost, 1 draw, 10 DED
+            new Team("NEW ZEALAND", 72, 50.00),    // 12 played, 6 won, 6 lost, 0 draw, 0 DED
+            new Team("SRI LANKA", 60, 50.00),      // 10 played, 5 won, 5 lost, 0 draw, 0 DED
+            new Team("ENGLAND", 105, 43.75),       // 20 played, 10 won, 9 lost, 1 draw, 19 DED
+            new Team("PAKISTAN", 40, 33.33),       // 10 played, 4 won, 6 lost, 0 draw, 8 DED
+            new Team("WEST INDIES", 32, 26.67),    // 10 played, 2 won, 6 lost, 2 draw, 0 DED
+            new Team("BANGLADESH", 33, 25.00)      // 11 played, 3 won, 8 lost, 0 draw, 3 DED
         ];
 
         const series = [
@@ -252,12 +252,12 @@
             const container = document.getElementById('seriesInputs');
             const initialPossibilities = {
                 "AUS vs IND": [0, 0, 4],
-                "SA vs SL": [1, 0, 1],
-                "NZ vs ENG": [1, 0, 2],
-                "SA vs PAK": [1, 0, 1],
+                "SA vs SL": [2, 0, 0],
+                "NZ vs ENG": [1, 0, 1],
+                "SA vs PAK": [2, 0, 0],
                 "PAK vs WI": [1, 0, 1],
                 "SL vs AUS": [0, 0, 2],
-                "WI vs BAN": [1, 0, 1]
+                "WI vs BAN": [1, 0, 0]
             };
 
             container.innerHTML = '';  // Clear existing content
