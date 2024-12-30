@@ -157,7 +157,7 @@
 <body>
     <h1>WTC 2025 Simulator</h1>
     
-    <h2>Current Standings 20th Dec 2024</h2>
+    <h2>Current Standings 30th Dec 2024</h2>
     <table id="initialStandings">
         <!-- Table will be populated by JavaScript -->
     </table>
@@ -206,9 +206,9 @@
         }
 
         const initialTeams = [
-            new Team("SA", 76, 63.33),      // 10 played, 6 won, 3 lost, 1 draw, 0 DED
-            new Team("AUS", 106, 58.89),    // 15 played, 9 won, 4 lost, 2 draw, 10 DED
-            new Team("IND", 114, 55.88),    // 17 played, 9 won, 6 lost, 2 draw, 2 DED
+            new Team("SA", 88, 66.67),      // 11 played, 7 won, 3 lost, 1 draw, 0 DED
+            new Team("AUS", 118, 61.46),    // 16 played, 10 won, 4 lost, 2 draw, 10 DED
+            new Team("IND", 114, 52.78),    // 17 played, 9 won, 7 lost, 2 draw, 2 DED
             new Team("NZ", 81, 48.21),      // 14 played, 7 won, 7 lost, 0 draw, 3 DED
             new Team("SL", 60, 45.45),      // 11 played, 5 won, 6 lost, 0 draw, 0 DED
             new Team("ENG", 114, 43.18),    // 22 played, 11 won, 10 lost, 1 draw, 22 DED
@@ -222,7 +222,6 @@
             "SA vs PAK",
             "PAK vs WI",
             "SL vs AUS",
-            "WI vs BAN",
         ];
 
         function populateInitialStandings() {
@@ -249,11 +248,10 @@
         function generateSeriesInputs() {
             const container = document.getElementById('seriesInputs');
             const initialPossibilities = {
-                "AUS vs IND": [0, 0, 2],
-                "SA vs PAK": [2, 0, 0],
+                "AUS vs IND": [0, 0, 1],
+                "SA vs PAK": [1, 0, 0],
                 "PAK vs WI": [1, 0, 1],
-                "SL vs AUS": [0, 0, 2],
-                "WI vs BAN": [0, 0, 1]
+                "SL vs AUS": [1, 1, 0],
             };
 
             container.innerHTML = '';  // Clear existing content
